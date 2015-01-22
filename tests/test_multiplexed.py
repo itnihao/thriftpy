@@ -61,6 +61,7 @@ def client_one(timeout=3000):
     return client_context(mux.ThingOneService, unix_socket=sock_path,
                           timeout=timeout)
 
+
 def client_two(timeout=3000):
     return client_context(mux.ThingTwoService, unix_socket=sock_path,
                           timeout=timeout)
